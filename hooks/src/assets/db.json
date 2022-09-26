@@ -1,0 +1,136 @@
+{
+  "santos": [
+    {
+      "id": 1,
+      "nombre": "Seiya",
+      "constelacion": "Pegaso"
+    },
+    {
+      "id": 2,
+      "nombre": "Shiryu",
+      "constelacion": "Dragón"
+    },
+    {
+      "id": 3,
+      "nombre": "Hyoga",
+      "constelacion": "Cisne"
+    },
+    {
+      "id": 4,
+      "nombre": "Shun",
+      "constelacion": "Andrómeda"
+    },
+    {
+      "id": 5,
+      "nombre": "Ikki",
+      "constelacion": "Fenix"
+    },
+    {
+      "nombre": "Saga",
+      "constelacion": "Gémenis",
+      "id": 6
+    },
+    {
+      "nombre": "Mu",
+      "constelacion": "Aries",
+      "id": 7
+    },
+    {
+      "nombre": "Shaka",
+      "constelacion": "Virgo",
+      "id": 8
+    },
+    {
+      "nombre": "Aldebaran",
+      "constelacion": "Tauro",
+      "id": 9
+    },
+    {
+      "nombre": "Mascara de Muerte",
+      "constelacion": "Cancer",
+      "id": 10
+    },
+    {
+      "nombre": "Shura",
+      "constelacion": "Capricornio",
+      "id": 11
+    },
+    {
+      "nombre": "Dokho",
+      "constelacion": "Libra",
+      "id": 12
+    },
+    {
+      "nombre": "Ayoria",
+      "constelacion": "Leo",
+      "id": 13
+    },
+    {
+      "nombre": "Ayoros",
+      "constelacion": "Sagitario",
+      "id": 14
+    },
+    {
+      "nombre": "Afrodita",
+      "constelacion": "Piscis",
+      "id": 15
+    },
+    {
+      "nombre": "Camus",
+      "constelacion": "Acuario",
+      "id": 16
+    },
+    {
+      "nombre": "Milo",
+      "constelacion": "Escorpio",
+      "id": 17
+    },
+    {
+      "nombre": "Jabu",
+      "constelacion": "Unicornio",
+      "id": 18
+    },
+    {
+      "nombre": "Geki",
+      "constelacion": "Osa Mayor",
+      "id": 19
+    },
+    {
+      "nombre": "Ban",
+      "constelacion": "León Menor",
+      "id": 20
+    },
+    {
+      "nombre": "Ichi",
+      "constelacion": "Hidra",
+      "id": 21
+    }
+  ],
+  "dioses": [
+    {
+      "id": 1,
+      "nombre": "Athena",
+      "de": "Tierra"
+    },
+    {
+      "id": 2,
+      "nombre": "Poseidón",
+      "de": "Mar"
+    },
+    {
+      "id": 3,
+      "nombre": "Hades",
+      "de": "Inframundo"
+    },
+    {
+      "id": 4,
+      "nombre": "Zeus",
+      "de": "Cielo"
+    },
+    {
+      "id": 5,
+      "nombre": "Ares",
+      "de": "Guerra"
+    }
+  ]
+}

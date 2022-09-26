@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" type="text/css" href="estilos.css"/>
+    <title>Crud Api Rest Ajax</title>
+</head>
+<body>
+    <div class="div-title"><h1 class="brand-title">Crud Api Rest Ajax</h1></div>
+    <section class="crud  container">
+        <article class="article1">
+            <div><h2 class="crud-title  brand-title">Agregar Santo</h2></div>
+            <form class="crud-form  inputs">
+                <input type="text" name="nombre" placeholder="nombre" required>
+                <br>
+                <input type="text" name="constelacion" placeholder="constelación" required>
+                <br>
+                <input type="submit" value="Enviar">
+                <input type="hidden" name="id">
+            </form>
+        </article>
+        <article class="article2">
+            <div><h2 class="brand-title">Ver Santos</h2></div>
+            <table class="crud-table container2">
+                <thead>
+                    <tr class="stilos2">
+                        <th>Nombre</th>
+                        <th>Constelación</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody> 
+                </tbody>
+            </table>
+        </article>  
+    </section>
+    <template id="crud-template">
+        <tr>
+            <td class="name"></td>
+            <td class="constellation"></td>
+            <td>
+                <button class="edit">Editar</button>
+                <button class="delete">Eliminar </button>
+            </td>
+        </tr>
+    </template>
+    <script src="crudAjax.js"></script>
+</body>
+</html>

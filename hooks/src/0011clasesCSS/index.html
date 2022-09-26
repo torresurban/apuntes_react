@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo Flexbox</title>
+    <style>
+        *,
+        *::after,
+        *::before{
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: #333;
+            height: 30vh; /*PARA VER EL FLEX-DIRECTION:COLUMN*/
+
+
+
+
+            display: flex;
+            /*fle* | inline-flex*/
+            
+            flex-direction: row;/*row para ver align-items*/
+             /* row* | row-reverse | column | column-reverse */
+            
+             flex-wrap: nowrap;/*nowrap para ver align-items*/
+             /*flex-wrap:wrap respeta el ancho que se le asgine al item tratando
+             de colocarlos en una fila y si es posible en varias filas
+             con el objetivo de respetar la medida asignada*/
+            /*nowrap* | wrap | wrap-reverse */
+            
+            /*flex-flow: row nowrap;*/
+             /* nowrap |wrap-reverse */
+            
+            justify-content: center;/*flex-start para ver align-items*/
+            /*dependiendo como esta definido nuestro eje pricipal
+            con flex-direction actuara el justify-content*/
+            /*flex-star* |flex-end |center |space-between |space-around |space-evenly*/
+            /*justify-content define la alineacion de los hijos en el eje principal(main-axis*/
+            
+            align-items: center;
+            /*si el eje principal es 'x'(flex-direction:row) entonces
+            align-items trabaja sobre 'y'(column) osea se
+            estira a lo largo de la columna y viceversa(se estira
+            a la ancho del eje x(row))*/
+            /*stretch* |flex-start | flex-end | center |baseline*/
+            
+            align-content: center;
+            /*Align-content define la alineacion de los hijos en el eje transversal(cross-axis)*/
+            /*No funciona cuando los hijos estan en una sola linea*/
+            /* flex-start* |flex-end |center |space-between |space-around |space-venly |stretch */
+        }
+
+        .item{
+            border: medium solid #999;
+            /*width: 20%;/*PARA VER EL FLEX-WRAP*/
+            /*height: 20%; /*PARA FLEX-WRAP CON EJE PRINCIPAL 'Y'*/
+            /*quitemos el width y height para ver como
+            actua el align-items*/
+
+            background-color: #666;
+            /*flex-grow: 0;*/
+            /*flex-grow:0; valor por defecto-- cuando la caja flexbox tenga espacio sobrante
+            ; con flex-grow tendra la habilidad o el factor de crecer; no se acepta valor negativo*/
+            
+            /*flex-shrink: 1;*/
+            /*flex-shrink:1; valor por defecto-- Caundo la caja flexbox NO tenga espacio
+            sobrante con esa propiedad tendra la habilidad o el factor de encogerse
+            NO se acepta valor negativo*/
+
+            /*flex-basis: auto;*/
+            /*Si la caja flexbox tiene direccion de fila, flex-basis representa el 'width'*/
+            /*Si la caja flexbox tiene direccion de columna, flex-basis representa el 'height'*/
+            flex:1 0 auto;
+            order: 0;
+            /*representa el orden que tendran los elementos 
+            hijos en la caja flexbox--Valor por defecto 0
+            Se aceptan valores positivos y negativos
+            Un valor menor siempre ira antes que un valor mayor*/
+            align-self: stretch;
+            /*stretch|flex-start|flex-end|center|baseline*/
+            /*Sobreescribe el valor de la propiedad 'align-items'
+            solo para el elemento hijo especificado*/
+        }
+        .item:nth-child(2){
+            order: -1;
+        }
+        .item:nth-child(3){
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+        <article class="item">Flex Item 4</article>
+        <article class="item">Flex Item 5</article>
+    </section>
+    <br><br>
+    <section class="container">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+    </section>
+    <br><br>
+    <section class="container">
+        <article class="item">Item 1</article>
+        <article class="item">Item 2</article>
+        <article class="item">Item 3</article>
+        <article class="item">Item 4</article>
+        <article class="item">Item 5</article>
+        <article class="item">Item 6</article>
+        <article class="item">Item 7</article>
+        <article class="item">Item 8</article>
+        <article class="item">Item 9</article>
+        <article class="item">Item 10</article>
+        <article class="item">Item 11</article>
+        <article class="item">Item 12</article>
+        <article class="item">Item 13</article>
+        <article class="item">Item 14</article>
+        <article class="item">Item 15</article>
+        <article class="item">Item 16</article>
+        <article class="item">Item 17</article>
+        <article class="item">Item 18</article>
+        <article class="item">Item 19</article>
+    </section> 
+</body>
+</html>
